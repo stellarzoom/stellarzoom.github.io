@@ -1,0 +1,624 @@
+VERSION="2.2.1"
+
+# Federation service provided by StellarID.io
+FEDERATION_SERVER="https://github.com/coinplay1/pay/"
+TRANSFER_SERVER="https://github.com/coinplay1/pay/"
+TRANSFER_SERVER_SEP0024="https://github.com/coinplay1/pay/"
+WEB_AUTH_ENDPOINT="https://github.com/coinplay1/pay/"
+
+SIGNING_KEY="GBG4QIHVST7BC4GBA7ASSWFERAFPIRRQQ6TSUI7TSC5KAZJUWBMKVEKJ"
+
+
+[DOCUMENTATION]
+ORG_NAME="github.com/coinplay1/pay"
+ORG_DBA="coinplay1/pay"
+ORG_URL="https://github.com/coinplay1/pay"
+ORG_LOGO="https://www.github.com/coinplay1/pay/images/trademark.png"
+ORG_DESCRIPTION="The information contained herein is intended exclusively for Swiss residents who are physically located in Switzerland. Potential investors should read the prospectus and the relevant Final Terms before making an investment decision in order to understand the potential risks associated with the decision to invest in the securities. You are about to inform yourself on the purchase a product that is not simple and may be difficult to understand. The information contained herein does not contain or constitute an offer to sell or a solicitation of any offer to buy securities. The value of the investment may change in line with market fluctuations and investors may lose some or all of their initial investment, as the investment funds carry no capital guarantee. The information provided is not contractual and can be changed without any prior notice. Some of the information published on this file/web page/document contains forward-looking statements. Users are cautioned that any such forward-looking statements are not guarantees of future performance and involve risks and uncertainties, and that actual results may differ materially from those in the forward-looking statements as a result of various factors. From time to time, the issuers and/or lead manager and/or their third-party agents may, for their own account or for the account of others, take positions in securities, currencies, financial instruments or other assets that serve as an underlying asset to the products on this Website. They may buy or sell these assets, act as market makers, and simultaneously operate as seller or as purchaser. The trading or hedging activities of the issuers and/or lead manager and/or their third-party agents may influence the price of an underlying asset and may influence whether or not the relevant barrier level is reached (if such a level exists)."
+ORG_OFFICIAL_EMAIL="support@coinplay1/pay.org"
+
+[[CURRENCIES]]
+code="SWISS"
+issuer="GCVHR2Q7Z5SF4IOCLMLCKKSJHE4UG5Q6J7HWN3HQO3PVPR57AET2SUWB"
+name="coinplay1/pay"
+desc="Swiss Custodian Bad-Bank Equity"
+is_asset_anchored=true
+regulated=true
+anchor_asset="SwissCustody"
+image="https://www.swisscustodys.org/img/seba.png"
+status="live"
+
+[[CURRENCIES]]
+code="SWISSCUSTODY"
+issuer="GCVHR2Q7Z5SF4IOCLMLCKKSJHE4UG5Q6J7HWN3HQO3PVPR57AET2SUWB"
+name="SwissCustody"
+desc="Swiss Custodian Bad-Bank Equity"
+is_asset_anchored=true
+regulated=true
+anchor_asset="SwissCustody"
+image="https://www.swisscustodys.org/img/seba.png"
+status="live"
+
+[[CURRENCIES]]
+code="BDSL"
+issuer="GCVHR2Q7Z5SF4IOCLMLCKKSJHE4UG5Q6J7HWN3HQO3PVPR57AET2SUWB
+"
+name="SwissCustody"
+desc="Swiss Custodian Bad-Bank Equity"
+is_asset_anchored=true
+regulated=true
+anchor_asset="SwissCustody"
+image="https://www.swisscustodys.org/img/seba.png"
+status="live"
+
+[[CURRENCIES]]
+code="UKRE"
+issuer="GCVHR2Q7Z5SF4IOCLMLCKKSJHE4UG5Q6J7HWN3HQO3PVPR57AET2SUWB"
+name="UK REALTY BOND"
+desc=" Please take sufficient time to read the Client Agreement as well as any other additional documentation and information available to you via our Website prior to opening an account and/or carrying out any activity with us. You should contact us for any further clarification, or seek independent professional advice, if necessary."
+is_asset_anchored=true
+regulated=true
+approval_criteria="AML/KYC Verification"
+display_decimals=7
+anchor_asset="Urban Village Group 9% p.a. UK Property Bond"
+anchor_asset_type=""
+image="https://www.swisscustodys.org/img/ukre.png"
+status="live"
+ 
+ 
+[[CURRENCIES]]
+code="CNEQ"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="HSBC Chinese Equity Fund"
+desc=" Please take sufficient time to read the Client Agreement as well as any other additional documentation and information available to you via our Website prior to opening an account and/or carrying out any activity with us. You should contact us for any further clarification, or seek independent professional advice, if necessary."
+is_asset_anchored = true
+anchor_asset_type="stock"
+anchor_asset="HSBC Global Investment Funds SICAV - Chinese Equity AC"
+display_decimals=7
+image="https://www.swisscustodys.org/img/seba.png"
+status="live"
+ 
+ 
+[[CURRENCIES]]
+code="AIML"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name=" Artificial Intelligence & Machine Learning Fund"
+desc="Please take sufficient time to read the Client Agreement as well as any other additional documentation and information available to you via our Website prior to opening an account and/or carrying out any activity with us. You should contact us for any further clarification, or seek independent professional advice, if necessary."
+is_asset_anchored = true
+anchor_asset_type="stock"
+anchor_asset="Echiquier Artificial Intelligence EUR BC"
+display_decimals=7
+image="https://www.swisscustodys.org/img/erres.png"
+status="live"
+ 
+[[CURRENCIES]]
+code="RESF"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Real Estate Securities Fund"
+desc="Please take sufficient time to read the Client Agreement as well as any other additional documentation and information available to you via our Website prior to opening an account and/or carrying out any activity with us. You should contact us for any further clarification, or seek independent professional advice, if necessary."
+is_asset_anchored = true
+anchor_asset_type="realestate"
+anchor_asset="BlackRock Real Estate Securities Fund"
+display_decimals=4
+image="https://www.swisscustodys.org/img/erres.png"
+status="live"
+ 
+[[CURRENCIES]]
+code="REEF"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Rare Earth Elements Fund"
+desc="Please take sufficient time to read the Client Agreement as well as any other additional documentation and information available to you via our Website prior to opening an account and/or carrying out any activity with us. You should contact us for any further clarification, or seek independent professional advice, if necessary."
+is_asset_anchored = true
+anchor_asset_type="stock"
+anchor_asset="Rare Earth Elements Fund"
+display_decimals=7
+image="https://www.swisscustodys.org/img/erres.png"
+status="live"
+ 
+ 
+[[CURRENCIES]]
+code="SAYU"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Schroders Alternatives Commodity Fund"
+desc="Please take sufficient time to read the Client Agreement as well as any other additional documentation and information available to you via our Website prior to opening an account and/or carrying out any activity with us. You should contact us for any further clarification, or seek independent professional advice, if necessary."
+is_asset_anchored = true
+anchor_asset_type="commodity"
+anchor_asset="Schroder Alternative Solutions Commodity Fund"
+display_decimals=7
+image="https://www.swisscustodys.org/img/erres.png"
+status="live"
+ 
+ 
+[[CURRENCIES]]
+code="SSPP"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Structured Products Participation Index"
+desc="Structured Product •  Tracker Certificate • Underlying: SIX SSPP Index"
+display_decimals=6
+is_asset_anchored=true
+anchor_asset="Swiss Structured Products Participation Index"
+anchor_asset_type="other"
+image="https://www.swisscustodys.org/img/erres.png"
+status="live"
+ 
+ 
+[[CURRENCIES]]
+code="SEBA"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Structured Products Capital Protection Index"
+desc="Please take sufficient time to read the Client Agreement as well as any other additional documentation and information available to you via our Website prior to opening an account and/or carrying out any activity with us. You should contact us for any further clarification, or seek independent professional advice, if necessary."
+is_asset_anchored=true
+display_decimals=7
+anchor_asset="Swiss Structured Products Capital Protection Index"
+anchor_asset_type="other"
+image="https://www.swisscustodys.org/img/seba.png"
+status="live"
+
+[[CURRENCIES]]
+code="STAR"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Aerospace Investment TARA"
+is_asset_anchored=true
+anchor_asset_type="crypto"
+anchor_asset="INTERSTELLAR STAR"
+image="https://swisscustody.org/images/star.png"
+status="live"
+
+[[CURRENCIES]]
+code="TARA"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Aerospace Investment TARA"
+is_asset_anchored=true
+anchor_asset_type="crypto"
+anchor_asset="INTERSTELLAR STAR"
+image="https://swisscustody.org/images/star.png"
+status="live"
+
+[[CURRENCIES]]
+code="ATOM"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Atom™"
+is_asset_anchored=true
+desc="Atom™ – Financial Data Management and Mapping Service. Atom™ is a financial data management service that can help organizations link finance data models to realize greater automation, control, and flexibility."
+anchor_asset_type="crypto"
+anchor_asset="INTERSTELLAR STAR"
+image="https://swisscustodys.org/atom.png"
+status="live" 
+ 
+[[CURRENCIES]]
+code="VLCC"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Supertanker"
+desc="Structured Product •  Participation Instruments • Underlying: Right to revenue from Crude Oil Floating Storage Very Large Crude Container Ships • Revenue from oil storage and clearing credited annually in USDC/USDT denominations • Dividends announced on 10th April every year."
+conditions="Dividend entitlement: Yes. Dividend paid annually by 15th April, in USDC/USDT denominations to accounts holding VLCC Tokens as on 31st March 23:59 Hrs."
+is_asset_anchored=true
+display_decimals=7
+anchor_asset="Very Large Crude Carrier PTC"
+anchor_asset_type="other"
+image="https://www.swisscustodys.org/img/vlcc.png"
+status="live"
+ 
+ 
+[[CURRENCIES]]
+code="OIL"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Crude Oil"
+desc="West Texas Intermediate Crude Oil |   WTI refers to the price of the New York Mercantile Exchange (NYMEX) WTI Crude Oil futures contract or the contract itself. 1 OIL = 1 Barrel of Texas Light Sweet Crude Oil (WTI) | Please take sufficient time to read the Client Agreement as well as any other additional documentation and information available to you via our Website prior to opening an account and/or carrying out any activity with us. You should contact us for any further clarification, or seek independent professional advice, if necessary."
+is_asset_anchored=true
+anchor_asset="Crude Oil WTI"
+display_decimals=7
+anchor_asset_type="commodity"
+is_unlimited=true
+image="https://www.swisscustodys.org/img/oil.png"
+status="live"
+ 
+ 
+[[CURRENCIES]]
+code="URA"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Uranium"
+desc=" Please take sufficient time to read the Client Agreement as well as any other additional documentation and information available to you via our Website prior to opening an account and/or carrying out any activity with us. You should contact us for any further clarification, or seek independent professional advice, if necessary."
+is_asset_anchored=true
+anchor_asset="Global X Uranium ETF"
+anchor_asset_type="commodity"
+display_decimals=7
+image="https://www.swisscustodys.org/img/ura.png"
+status="live"
+
+[[CURRENCIES]]
+code="JPMC"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Carbon Transition U.S. Equity Fund"
+desc="Please take sufficient time to read the Client Agreement as well as any other additional documentation and information available to you via our Website prior to opening an account and/or carrying out any activity with us. You should contact us for any further clarification, or seek independent professional advice, if necessary."
+is_asset_anchored=true
+anchor_asset="JPMorgan Carbon Transition US Equity ETF"
+anchor_asset_type="other"
+display_decimals=7
+image="https://www.swisscustodys.org/img/seba.png"
+status="live"
+ 
+[[CURRENCIES]]
+code="REIT"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Real Estate Investment Fund"
+desc="Fund-linked token backed one-for-one to units in the private Real Estate and Infrastructure Investment Trust managed by Vestinwolf Holdings."
+conditions="Dividend entitlement: Yes. Dividend paid annually in USDC/USDT denominations to accounts holding REIT Tokens as on 31st March 23:59 Hrs."
+is_asset_anchored = true
+anchor_asset_type="realestate"
+anchor_asset="Vestinwolf Real Estate & Infrastructure Investment Trust Fund"
+display_decimals=2
+image="https://www.swisscustody.org/images/swiss_logo1.png"
+status="live"
+ 
+[[CURRENCIES]]
+code="CBNX"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Access China Govt Bond Fund"
+desc="CHINESE SOVEREIGN BONDS"
+is_asset_anchored=true
+anchor_asset="Goldman Sachs Access China Govt Bond ETF"
+anchor_asset_type=""
+display_decimals=4
+image="https://www.swisscustodys.org/img/erres.png"
+status="live"
+ 
+[[CURRENCIES]]
+code="SGB"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Sovereign Gold Bonds"
+desc="Structured Products - Perpetual Tracker Certificates  ||   Sovereign Gold Bond (SGBs) are government securities denominated in grams of gold. They are substitutes for holding physical gold. Investors have to pay the issue price in cash and the bonds will be redeemed in cash on maturity. The Bond is issued by Reserve Bank on behalf of Government of India. The quantity of gold for which the investor pays is protected, since he receives the ongoing market price at the time of redemption/ premature redemption. The SGB offers a superior alternative to holding gold in physical form. The risks and costs of storage are eliminated. Investors are assured of the market value of gold at the time of maturity and periodical interest. SGB is free from issues like making charges and purity in the case of gold in jewellery form. The bonds are held in the books of the Reserve Bank of India."
+is_asset_anchored=true
+anchor_asset="Sovereign Gold Bond"
+anchor_asset_type=""
+display_decimals=4
+image="https://indusx.exchange/image/sgbgold.png"
+status="live"
+ 
+[[CURRENCIES]]
+code="USEQ"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Vestinwolf U.S. Large Cap Equity Fund"
+desc="Structured Product • Full redemption for holdings greater than $1M every 12-60 months at 2.5% fee"
+is_asset_anchored=true
+anchor_asset="Goldman Sachs Active Beta U.S. Large Cap Equity Index"
+anchor_asset_type="other"
+display_decimals=4
+image="https://www.swisscustodys.org/img/erres.png"
+status="live"
+
+[[CURRENCIES]]
+code="VHEF"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Hydrogen Economy Fund"
+desc="Structured Product • Full redemption for holdings greater than $1M every 12-60 months at 2.5% fee"
+is_asset_anchored=true
+anchor_asset="Solactive Hydrogen Economy Index NTR"
+anchor_asset_type="other"
+display_decimals=4
+image="https://www.swisscustodys.org/img/erres.png"
+status="live"
+ 
+ 
+ 
+[[CURRENCIES]]
+code="GDEF"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Global Decarbonization Enablers Index"
+desc="Tokenized Undertakings for Collective Investment in Transferable Securities"
+conditions="Dividend entitlement: Yes. Dividend paid annually in USDC/USDT denominations to accounts holding this asset as on 31st March 23:59 Hrs.      ||     The information provided herein is not contractual and does not constitute investment advice. Past performance is not a reliable indicator of future performance. The value of the investment may change in line with market fluctuations and investors may lose some or all of their initial investment, as the investment funds carry no capital guarantee. Access to the products and services presented herein may be subject to restrictions for certain people or countries. Taxation depends on each investor’s personal situation. The risks, charges and recommended investment period of the investment funds presented are described in the KIIDs (key investment information documents) and prospectuses available on the website. https://vestinwolf.com/disclaimer-stellar"
+is_asset_anchored = true
+anchor_asset_type="other"
+anchor_asset="iClima Global Decarbonisation Enablers Index"
+display_decimals=4
+image="https://www.swisscustodys.org/img/erres.png"
+status="live"
+ 
+[[CURRENCIES]]
+code="MVIS"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name=" Global Digital Assets Equity Index Fund"
+desc="Tokenized Index Fund  |   The MVIS Global Digital Assets Equity Index is a unique pure-play index that aims to track the performance of the largest and most liquid companies in the global digital assets segment. The Index is weighted by float-adjusted market capitalisation and is calculated in USD as a price and a total return net index."
+conditions="Maximum issue on Stellar network fixed at 50000000 units."
+is_asset_anchored = true
+anchor_asset_type="other"
+anchor_asset="MVIS Global Digital Assets Equity Index"
+display_decimals=4
+image="https://www.swisscustodys.org/img/erres.png"
+status="live"
+ 
+ 
+[[CURRENCIES]]
+code="ERRES"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Rothchild Real Estate SICAV"
+desc="Edmond de Rothschild Real Estate SICAV is a closed-end fund incorporated in Switzerland. The objective of the fund is to invest in Swiss real estate assets.The assets are held directly by the SICAV. The Fund focuses on cash flow generation from its buildings with an overlay of added value strategies seeking capital gains."
+conditions="Maximum issue on Stellar network fixed at 500000 units."
+is_asset_anchored = true
+fixed_number=500000
+anchor_asset_type="other"
+anchor_asset="Edmond de Rothschild Real Estate SICAV"
+display_decimals=6
+image="https://www.swisscustodys.org/img/erres.png"
+status="live"
+ 
+ 
+[[CURRENCIES]]
+code="VCAN"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Cannabis Growth Fund"
+desc="Under normal market conditions, the fund will invest at least 80% of its net assets in exchange-traded equity securities of companies around the globe engaged in legal cannabis-related businesses. The adviser considers a company to be a Cannabis Company if the company derives at least 50% of its revenue from the legal cannabis industry. It is non-diversified. • Full redemption for holdings greater than $1M every 12-60 months at 2.5% fee."
+is_asset_anchored=true
+anchor_asset="Vestinwolf Cannabis Growth Fund"
+anchor_asset_type="commodity"
+display_decimals=7
+image="https://www.swisscustodys.org/img/vcan.png"
+status="live"
+ 
+ 
+[[CURRENCIES]]
+code="SPX3000PE"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="SPX3000PE"
+desc="SPX3000PE"
+is_asset_anchored=true
+anchor_asset_type="other"
+display_decimals=7
+image="https://www.swisscustodys.org/img/seba.png"
+status="live" 
+
+[[CURRENCIES]]
+code="MSCI"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="MSCI GLOBAL DERIVATIVES INDEX"
+desc="MSCI GLOBAL DERIVATIVES INDEX"
+is_asset_anchored=true
+anchor_asset_type="other"
+display_decimals=7
+image="https://swisscustody.org/images/msci.png"
+status="live" 
+
+[[CURRENCIES]]
+code="INR"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Indian Rupee"
+desc="All rupee deposit equivalents are held in an audited, swiss-domiciled escrow account for the exclusive benefit of INR token holders."
+conditions="By proceeding you confirm that you have understood and accept the legal information, important notes and terms of use presented here. If you do not accept the terms of use, please refrain from using this file/site/website."
+is_asset_anchored = true
+anchor_asset_type="fiat"
+anchor_asset="INR"
+display_decimals=2
+image="https://www.swisscustody.org/images/inr-logo.png"
+status="live"
+ 
+[[CURRENCIES]]
+code="USD"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="US Dollar"
+desc="USD"
+is_asset_anchored = true
+anchor_asset_type="fiat"
+anchor_asset="USD"
+display_decimals=2
+image="https://www.swisscustody.org/images/USD.png"
+status="live"
+ 
+[[CURRENCIES]]
+code="DZD"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Algerian Dinar"
+desc="All dinar deposit equivalents are held in an audited, swiss-domiciled escrow account for the exclusive benefit of DZD token holders."
+conditions="Deposit And Withdrawal fees apply"
+is_asset_anchored = true
+anchor_asset_type="fiat"
+anchor_asset="Algerian Dinar"
+display_decimals=2
+image="https://www.swisscustody.org/images/dzd.png"
+
+status="live"
+[[CURRENCIES]]
+code="CHF"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Swiss Franc"
+desc="All CHF deposit equivalents are held in an audited, swiss-domiciled escrow account for the exclusive benefit of CHF holders."
+conditions="Deposit And Withdrawal fees apply"
+is_asset_anchored = true
+anchor_asset_type="fiat"
+anchor_asset="CHF"
+display_decimals=2
+image="https://www.swisscustody.org/images/swiss_logo1.png"
+status="live"
+ 
+ 
+[[CURRENCIES]]
+code="AED"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="UAE Dirham"
+desc="Cryptocurrency backed one-for-one to the United Arab Emirates dirham.  All dirham equivalent deposits are held in an audited, swiss-domiciled escrow account for the exclusive benefit of AED token holders."
+conditions="Deposit And Withdrawal fees apply"
+is_asset_anchored = true
+anchor_asset_type="fiat"
+anchor_asset="UAE Dirham"
+display_decimals=2
+image="https://www.swisscustody.org/images/AED_LOGO.png"
+status="live"
+
+[[CURRENCIES]]
+code="GBP"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Pound Sterling"
+desc="Synthetic Currency Derivative | All sterling equivalents are held in an audited, swiss-domiciled escrow account for the exclusive benefit of GBP token holders."
+conditions="Deposit And Withdrawal fees apply"
+is_asset_anchored = true
+anchor_asset_type="fiat"
+anchor_asset="Pound Sterling"
+display_decimals=2
+image="https://www.swisscustody.org/images/GBP.png"
+status="live"
+
+[[CURRENCIES]]
+code="NOK"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Norwegian Krone"
+desc="Cryptocurrency backed one-for-one to the Norwegian krone.  All krone deposit equivalents are held in an audited, swiss-domiciled escrow account for the exclusive benefit of NOK token holders."
+conditions="Deposit And Withdrawal fees apply"
+is_asset_anchored = true
+anchor_asset_type="fiat"
+anchor_asset="Norwegian Krone"
+display_decimals=2
+image="https://www.swisscustody.org/images/NORWAY.png"
+status="live"
+ 
+ 
+[[CURRENCIES]]
+code="EUA"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Carbon Emissions Allowances"
+desc="Synthetic Tokenized Futures representing European Emission Allowances on the ICE Futures | Underlying Futures Contract Specs.: One lot of 1000 EUAs. Each EUA being an entitlement to emit one tonne of carbon dioxide equivalent gas | Maximum Price Fluctuation: There are no limits."
+is_asset_anchored = true
+anchor_asset_type="other"
+anchor_asset="European Union Allowance"
+display_decimals=2
+image="https://www.swisscustody.org/images/eua.png"
+ 
+[[CURRENCIES]]
+code="XAU"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="1kg GOLD"
+desc="Available on DEX and equal to the Non-fungible token NFT representative of 35oz vaulted gold at Banque Dépositaire Suisse"
+conditions="swisscustody.org IS THE OFFICIAL ISSUER AND CUSTODIAN OF 100oz. GOLD. Deposit And Withdrawal fees apply. Redeem physical gold from any of approved custodians."
+redemption_instructions="For off-chain transactions contact stellar@swiss-custody.com"
+is_asset_anchored = true
+anchor_asset_type="commodity"
+anchor_asset="Swiss Gold"
+image="https://swisscustody.org/images/gold.png"
+
+[[CURRENCIES]]
+code="XAUoz"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="100oz GOLD NFT"
+desc="To purchase privately, contact pamp@swisscustody.org Non-fungible token NFT representative of 100oz vaulted gold at Banque Dépositaire Suisse"
+conditions="All fiat transactions happen OFF-CHAIN strictly. Deposit And Withdrawal fees apply. Redeem physical gold from any of approved custodians."
+is_asset_anchored = true
+anchor_asset_type="commodity"
+anchor_asset="Gold"
+image="https://swisscustody.org/images/gold.png"
+
+[[CURRENCIES]]
+code="KES"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Kenyan Shilling (KES)"
+desc="Kenyan Shilling • 1 KES token redeemable for 0.90 Kenyan Shilling worth USD/GBP/CHF or equivalent value."
+is_asset_anchored=true
+anchor_asset_type="fiat"
+anchor_asset="KES"
+display_decimals=2
+image="https://www.swisscustody.org/images/kes.png"
+status="live"
+ 
+[[CURRENCIES]]
+code="VFX"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="VFX"
+desc="Fund linked tokens"
+is_asset_anchored = true
+anchor_asset_type="stock"
+anchor_asset="VFX"
+display_decimals=2
+image="https://www.swisscustody.org/images/vfx.png"
+status="live"
+ 
+[[CURRENCIES]]
+code="XPLA"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Physical Platinum ETP"
+desc="Vaulted | Underlying: Physical Platinum"
+is_asset_anchored = true
+anchor_asset_type="commodity"
+anchor_asset="Platinum"
+display_decimals=2
+image="https://www.swisscustody.org/images/xpla.png"
+status="live"
+
+[[CURRENCIES]]
+code="XPAL"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Physical Palladium ETP"
+desc="Underlying: Physical Palladium"
+is_asset_anchored = true
+anchor_asset_type="commodity"
+anchor_asset="Palladium"
+display_decimals=2
+image="https://www.swisscustody.org/images/xpal.png"
+status="live"
+ 
+[[CURRENCIES]]
+code="CNY"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Chinese Yuan"
+desc="All Remnibi equivalent deposits are held in an audited swiss domiciled custodian and Depository Account"
+is_asset_anchored=true
+anchor_asset_type="fiat"
+anchor_asset="Chinese Yuan"
+image="https://www.swisscustody.org/images/cny.png"
+status="live"
+
+[[CURRENCIES]]
+code="AMMO"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Corporate Ammo"
+desc="Corporate Ammo is a native currency by the Transnational Corporate Consortium regulated by Banque Dépositaire Suisse AG"
+image="https://swisscustody.org/images/ammo.png"
+
+[[CURRENCIES]]
+code="PAMP"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Swiss Gold"
+desc="1 PAMP represents 1 fine Troy Ounce of Swiss PAMP Gold."
+is_asset_anchored=true
+anchor_asset_type="commodity"
+anchor_asset="PAMP Swiss Gold"
+image="https://swisscustody.org/images/gold.png"
+
+[[CURRENCIES]]
+code="KRX"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Krása"
+desc="Native utility tokens of Krása • Krasa Digital Books • Krasa News • Krasa Innovation and Design"
+anchor_asset="KRÁSA"
+anchor_asset_type="stock"
+image="https://swisscustody.org/images/krx.png"
+ 
+[[CURRENCIES]]
+code="JPY"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Japanese Yen"
+desc="All dirham equivalent deposits are held in an audited, swiss-domiciled escrow account for the exclusive benefit of JPY token holders."
+conditions="Speculators risk losing all of their capital"
+is_asset_anchored = true
+anchor_asset_type="fiat"
+anchor_asset="JPY"
+display_decimals=2
+image="https://www.swisscustody.org/images/jpy.png"
+status="live"
+
+[[CURRENCIES]]
+code="SGRE"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Short - Global Real Estate"
+desc="Bet against global real estate market"
+is_asset_anchored=true
+anchor_asset_type="realestate"
+display_decimals=7
+image="https://www.swisscustodys.org/img/seba.png"
+status="live" 
+
+[[CURRENCIES]]
+code="ITR"
+issuer="GA6VXTS64XUOCQZSBAYHD24ZYJYPNB3KJ2CVKSYIE43P2DQQIX74UT2A"
+name="Indo-Tibetan Rupee"
+desc="Tibetan Rupiya"
+is_asset_anchored=true
+anchor_asset_type="fiat"
+display_decimals=7
+image="https://www.swisscustody.org/images/trs.png"
+status="live" 
