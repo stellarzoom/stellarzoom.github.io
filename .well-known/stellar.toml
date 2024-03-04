@@ -10,13 +10,13 @@ ACCOUNTS=[
 ORG_NAME="Anubistoken"
 ORG_URL="https://stellarzoom.github.io/"
 ORG_LOGO = "https://stellarzoom.github.io/img/anubis.png"
-ORG_OFFICIAL_EMAIL="anubistoken@gmail.com"
-ORG_SUPPORT_EMAIL="anubistoken@gmail.com"
+ORG_OFFICIAL_EMAIL="None"
+ORG_SUPPORT_EMAIL="None"
 ORG_TWITTER="0xanubistoken"
 ORG_DESCRIPTION="Anubistoken: Create Value to Meme Coin Space"
 
 [[PRINCIPALS]]
-email="anubistoken@gmail.com"
+email="NOne"
 
 [[CURRENCIES]]
 code = "ANUB"
